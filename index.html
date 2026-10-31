@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f5ee" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Três cantinhos de Minas e um convite de Vinícius para Jennifer. O próximo destino a gente escolhe junto." />
+  <meta property="og:title" content="Jennifer, o próximo destino é com você." />
+  <meta property="og:description" content="Uma cartinha, três cantinhos de Minas e um fim de semana para chamar de nosso." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="ticket-export.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>Entre nós — um convite para Jennifer</title>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" /></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.3 5.7a5.2 5.2 0 0 0-7.4 0l-.9.9-.9-.9a5.2 5.2 0 0 0-7.4 7.4L12 21l8.3-7.9a5.2 5.2 0 0 0 0-7.4Z" /></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.3" /></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" /></symbol>
+    <symbol id="icon-cup" viewBox="0 0 24 24"><path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Zm12 1h2a3 3 0 1 1 0 6h-2M8 3v3m5-3v3M3 23h15" /></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 3C9 2 2 7 5 15c3 8 16 4 15-12ZM3 22 15 10m-7 7v-5m4 1h5" /></symbol>
+    <symbol id="icon-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M7 4v16M17 4v16M3 9h4m-4 6h4m10-6h4m-4 6h4" /></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2" /><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" /></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" /></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.7 7.5L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.2Z" /><path d="M8 7c-.6 1-.2 3 1.7 4.9s3.9 2.4 4.9 1.8l1.3-1.1-2.4-1.3-.9.7c-.8-.3-1.8-1.3-2.2-2.1l.7-.9L9.8 6.7 8 7Z" /></symbol>
+  </svg>
+  <a class="skip-link" href="#experience">Pular para o convite</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" id="goToStart" href="#experience" aria-label="Entre nós, início"><svg class="icon brand-heart" aria-hidden="true"><use href="#icon-heart" /></svg>entre nós<span>.</span></a>
+      <span class="header-note">de <span data-sender>Vinícius</span>, para <span data-recipient>Jennifer</span></span>
+      <span class="header-edition">MINAS GERAIS <span aria-hidden="true">✳</span> EDIÇÃO A DOIS</span>
+    </header>
+    <nav class="journey-nav" aria-label="Etapas do convite">
+      <ol class="journey-steps">
+        <li class="is-current" data-step-index="0" aria-current="step"><span class="step-dot">01</span><span>O convite</span></li>
+        <li data-step-index="1"><span class="step-dot">02</span><span>A cartinha</span></li>
+        <li data-step-index="2"><span class="step-dot">03</span><span>O destino</span></li>
+        <li data-step-index="3"><span class="step-dot">04</span><span>Nosso ritmo</span></li>
+        <li data-step-index="4"><span class="step-dot">05</span><span>Nossa passagem</span></li>
+      </ol>
+      <div class="progress-track" role="progressbar" aria-label="Progresso do convite" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1"><span id="progressFill"></span></div>
+      <p class="mobile-progress"><span id="currentStepName">O convite</span><span id="chapterLabel">01 de 05</span></p>
+    </nav>
+    <p id="resumeNote" class="resume-note" hidden>Seu roteiro continua de onde você parou.</p>
+    <main id="experience" tabindex="-1">
+      <section class="screen hero-screen" data-screen="0" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-line"></span> UM CONVITE, SÓ PRA VOCÊ</p>
+          <p class="hello">Oi, <span data-recipient>Jennifer</span> <svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg></p>
+          <h1 id="intro-title">Um fim de semana.<br />Três destinos.<br /><em>E nós dois.<svg class="hand-underline" viewBox="0 0 330 18" aria-hidden="true"><path d="M4 12C80 2 210 2 325 8M40 16c90-7 180-7 247-5" /></svg></em></h1>
+          <p class="hero-description">Fiz uma pequena seleção de cantinhos de Minas.<br class="desktop-break" /> Mas a melhor parte da viagem eu já escolhi: <strong>a sua companhia.</strong></p>
+          <div class="hero-actions"><button class="btn btn-primary" type="button" data-next>Abrir meu convite <svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></button><span class="action-note">uma pausa na rotina começa aqui</span></div>
+          <div class="hero-signoff"><span class="handwritten">a próxima história pode ser nossa.</span><svg viewBox="0 0 92 44" class="drawn-arrow" aria-hidden="true"><path d="M3 4c15 29 55 35 80 16m-17-1 19-2-7 18" /></svg></div>
+        </div>
+        <div class="hero-art">
+          <svg class="compass" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="36" /><circle cx="50" cy="50" r="30" stroke-dasharray="1 5" /><path d="m50 13 7 30 30 7-30 7-7 30-7-30-30-7 30-7Z" /><path d="m50 24 4 22 22 4-22 4-4 22-4-22-22-4 22-4Z" /><text x="50" y="9" text-anchor="middle">N</text></svg>
+          <figure class="hero-photo photo-paper"><img src="assets/photos/ouro-preto.jpg" srcset="assets/photos/ouro-preto-480.jpg 480w, assets/photos/ouro-preto-800.jpg 800w, assets/photos/ouro-preto.jpg 1600w" sizes="(max-width: 600px) calc(100vw - 48px), 560px" decoding="async" data-fallback="assets/ouro-preto.svg" alt="Casario colonial, igrejas e telhados de Ouro Preto sob o céu azul" width="1600" height="1067" fetchpriority="high" /><figcaption><svg class="icon" aria-hidden="true"><use href="#icon-pin" /></svg> Ouro Preto, Minas Gerais <span>um dos nossos possíveis destinos</span></figcaption></figure>
+          <div class="photo-stamp" aria-hidden="true"><span>BOA COMPANHIA</span><svg class="icon"><use href="#icon-heart" /></svg><span>DESTINO FAVORITO</span></div>
+          <figure class="little-photo photo-paper"><img src="assets/photos/sao-thome.jpg" srcset="assets/photos/sao-thome-480.jpg 480w, assets/photos/sao-thome-800.jpg 800w, assets/photos/sao-thome.jpg 1600w" sizes="193px" decoding="async" data-fallback="assets/sao-thome.svg" alt="Pôr do sol com a silhueta da Pirâmide em São Thomé das Letras" width="1600" height="1200" /><figcaption>ou quem sabe, um pôr do sol?</figcaption></figure>
+          <span class="photo-margin-note">colecionar momentos, não coisas.</span>
+        </div>
+        <div class="hero-bottom"><span class="hero-bottom-label">NOSSO PEQUENO MAPA</span><p>Ouro Preto <span>·</span> São Thomé das Letras <span>·</span> São João del-Rei</p><svg class="icon" aria-hidden="true"><use href="#icon-spark" /></svg></div>
+      </section>
+      <section class="screen letter-screen" data-screen="1" aria-labelledby="letter-title" hidden>
+        <div class="letter-intro">
+          <p class="eyebrow">02 / A CARTINHA</p>
+          <h2 id="letter-title">Um encontro <br />em São João. <br /><em>Vontade de outro.</em></h2>
+          <p>Antes de escolher a próxima parada, deixa eu te contar de onde veio esse convite.</p>
+          <figure class="letter-memory photo-paper">
+            <img src="assets/photos/sao-joao.jpg" srcset="assets/photos/sao-joao-480.jpg 480w, assets/photos/sao-joao-800.jpg 800w, assets/photos/sao-joao.jpg 1296w" sizes="250px" decoding="async" data-fallback="assets/sao-joao.svg" alt="Casario e Igreja do Carmo em São João del-Rei, cidade onde nos conhecemos" width="1296" height="864" loading="lazy" />
+            <figcaption><svg class="icon" aria-hidden="true"><use href="#icon-pin" /></svg><span>São João del-Rei<small>o nosso ponto de partida.</small></span></figcaption>
+          </figure>
+          <span class="handwritten">de um encontro em São João<br />à vontade de um próximo.</span>
+          <button class="text-button back-link" type="button" data-back><span aria-hidden="true">←</span> Voltar</button>
+        </div>
+        <div class="letter-panel" id="envelopeZone">
+          <button id="openLetter" class="envelope-button" type="button" aria-expanded="false" aria-controls="letterContent" aria-label="Abrir a carta para Jennifer">
+            <svg class="envelope-art" viewBox="0 0 500 340" aria-hidden="true"><defs><pattern id="paper-lines" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 6 6 0" stroke="#dcd4bf" stroke-width=".4" /></pattern></defs><rect x="31" y="60" width="438" height="252" rx="6" fill="#ddd8c5" /><path d="M31 67 250 218 469 67" fill="#e9e3d1" stroke="#c9c2ae" /><rect x="72" y="27" width="356" height="230" rx="2" fill="#fcfbf5" stroke="#d9d2bf" /><path d="M97 58h110m-110 14h72" stroke="#ded8c8" /><text x="250" y="125" text-anchor="middle" class="envelope-to">para você, <tspan data-recipient>Jennifer</tspan></text><path d="M31 307 220 163q30-17 60 0l189 144" fill="#efeadb" stroke="#d1cab6" /><path d="m31 68 219 150L469 68v239H31Z" fill="url(#paper-lines)" /><path d="m31 68 219 150L469 68M31 307l175-125m263 125L294 182" fill="none" stroke="#cbc3ad" /><circle cx="250" cy="213" r="31" fill="#a6553e" /><path d="M250 204c-10-12-23 3 0 15 23-12 10-27 0-15Z" fill="none" stroke="#f5e5d5" stroke-width="1.5" /></svg>
+            <span class="envelope-hint">Tem carinho aqui dentro. <span>Toque para abrir <span aria-hidden="true">↗</span></span></span>
+          </button>
+          <article class="note-paper" id="letterContent" aria-label="Uma carta para você" hidden>
+            <div class="letter-paper-heading"><span>ESCRITA COM CARINHO</span><svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg><span>SÓ PRA VOCÊ</span></div>
+            <p class="letter-salutation" tabindex="-1">Ei, <span data-recipient>Jennifer</span>,</p>
+            <div class="letter-prose">
+              <p id="personalNote" hidden></p>
+              <p>Eu tô gostando de te conhecer. E queria ter mais tempo com você. Tempo pra uma conversa que muda de assunto, uma risada no meio do caminho e a chance de descobrir um pouco mais de quem a gente é quando está junto.</p>
+              <p class="letter-emphasis">Eu gostei de te encontrar.<br /><em>E fiquei com vontade de te encontrar de novo.</em></p>
+              <p>Foi dessa vontade que surgiu a ideia da viagem. Fico imaginando a gente escolhendo um lugar pra comer, parando num café pelo caminho ou decidindo o passeio na hora. Talvez um pôr do sol em São Thomé, as ladeiras de Ouro Preto ou uma volta a São João. São planos simples que eu adoraria dividir com você.</p>
+              <p>Preparar esse convite foi o meu jeito de colocar um pouco de carinho nessa ideia. De te dar alguma coisa pra abrir, ler e, quem sabe, guardar. E de deixar um espaço pra você: pro lugar que tiver vontade de conhecer, pro programa que te animar, pro jeito como gostaria de passar esses dias.</p>
+              <p>Se você topar, a gente escolhe a data, conversa sobre os detalhes e transforma esse plano em um fim de semana nosso.</p>
+              <p>Eu vou gostar de planejar essa viagem com você. E mais ainda de chegar lá e pensar: <em>que bom que a gente veio.</em></p>
+            </div>
+            <div class="letter-closing"><p class="letter-sign">com carinho,<br /><span data-sender>Vinícius</span> <svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg></p><span class="letter-closing-mark" aria-hidden="true">entre nós.</span></div>
+            <p class="letter-postscript"><span>P.S.</span> O Fuscas Lanches já tem um lugar nessa história. Se a gente passar por lá de novo, vou considerar tradição. kkkkk</p>
+          </article>
+          <button type="button" id="letterNext" class="btn btn-primary letter-next" data-next hidden>Agora me conta: pra onde a gente vai? <svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></button>
+        </div>
+      </section>
+      <section class="screen destination-screen" data-screen="2" aria-labelledby="destination-title" hidden>
+        <header class="section-heading"><div><p class="eyebrow">03 / O DESTINO</p><h2 id="destination-title">Qual vai ser o nosso <em>cenário?</em></h2></div><p>Três jeitos de sair da rotina.<br />A companhia é a mesma em todos.</p></header>
+        <div class="destination-options" role="group" aria-label="Escolha uma cidade para viajar">
+          <button class="destination-card" type="button" data-choice="destination" data-value="ouro-preto" aria-pressed="false"><span class="destination-image"><img src="assets/photos/ouro-preto.jpg" srcset="assets/photos/ouro-preto-480.jpg 480w, assets/photos/ouro-preto-800.jpg 800w, assets/photos/ouro-preto.jpg 1600w" sizes="(max-width: 960px) 30vw, 380px" decoding="async" data-fallback="assets/ouro-preto.svg" alt="Vista do centro histórico de Ouro Preto" width="1600" height="1067" loading="lazy" /><span class="destination-tag">PARA SE PERDER NAS LADEIRAS</span><span class="choice-check"><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg></span></span><span class="destination-info"><span class="destination-index">01 <span>HISTÓRIA & CAFÉ</span></span><strong>Ouro Preto</strong><span class="destination-description">Um café no caminho, casarios antigos e uma conversa que rende.</span><span class="destination-select"><span data-choice-label data-idle-label="Escolher esse destino">Escolher esse destino</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></span></span></button>
+          <button class="destination-card" type="button" data-choice="destination" data-value="sao-thome" aria-pressed="false"><span class="destination-image"><img src="assets/photos/sao-thome.jpg" srcset="assets/photos/sao-thome-480.jpg 480w, assets/photos/sao-thome-800.jpg 800w, assets/photos/sao-thome.jpg 1600w" sizes="(max-width: 960px) 30vw, 380px" decoding="async" data-fallback="assets/sao-thome.svg" alt="Pôr do sol dourado na Pirâmide de São Thomé das Letras" width="1600" height="1200" loading="lazy" /><span class="destination-tag">PARA VER O DIA IR EMBORA</span><span class="choice-check"><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg></span></span><span class="destination-info"><span class="destination-index">02 <span>NATUREZA & PÔR DO SOL</span></span><strong>São Thomé das Letras</strong><span class="destination-description">Mirantes, um pouco de aventura e tempo para olhar o horizonte.</span><span class="destination-select"><span data-choice-label data-idle-label="Escolher esse destino">Escolher esse destino</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></span></span></button>
+          <button class="destination-card" type="button" data-choice="destination" data-value="sao-joao" aria-pressed="false"><span class="destination-image"><img src="assets/photos/sao-joao.jpg" srcset="assets/photos/sao-joao-480.jpg 480w, assets/photos/sao-joao-800.jpg 800w, assets/photos/sao-joao.jpg 1296w" sizes="(max-width: 960px) 30vw, 380px" decoding="async" data-fallback="assets/sao-joao.svg" alt="Casas coloniais coloridas e a Igreja do Carmo em São João del-Rei" width="1296" height="864" loading="lazy" /><span class="destination-tag familiar-tag">ONDE A NOSSA HISTÓRIA COMEÇOU</span><span class="choice-check"><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg></span></span><span class="destination-info"><span class="destination-index">03 <span>UM LUGAR NOSSO</span></span><strong>São João del-Rei</strong><span class="destination-description">Voltar onde a gente se conheceu. Dessa vez, com um convite só para nós.</span><span class="destination-select"><span data-choice-label data-idle-label="Escolher esse destino">Escolher esse destino</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></span></span></button>
+        </div>
+        <div class="selection-preview" id="destinationPreview" aria-live="polite" hidden><svg class="icon" aria-hidden="true"><use href="#icon-pin" /></svg><div><strong id="previewTitle"></strong><p id="previewText"></p></div></div>
+        <div class="screen-actions"><button class="text-button" type="button" data-back><span aria-hidden="true">←</span> Voltar para a carta</button><div class="continue-action"><p class="selection-hint" id="selectionHintDestination" role="status">Escolha um destino para continuar.</p><button class="btn btn-primary" type="button" data-next data-requires="destination" aria-describedby="selectionHintDestination" disabled>Esse é o nosso destino <svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></button></div></div>
+      </section>
+      <section class="screen plan-screen" data-screen="3" aria-labelledby="plan-title" hidden>
+        <header class="section-heading"><div><p class="eyebrow">04 / NOSSO RITMO</p><h2 id="plan-title">Um plano leve.<br /><em>Do nosso jeito.</em></h2></div><p>Sem agenda lotada nem despertador.<br />Só duas escolhas para dar o tom.</p></header>
+        <div class="plan-columns">
+          <fieldset class="plan-group"><legend><span>01</span> O que a gente faz?</legend><p class="field-help">Escolha o programa que mais combina com você.</p><div class="activity-options">
+            <button type="button" class="activity-card" data-choice="activity" data-value="jantar" aria-pressed="false"><span class="activity-icon"><svg class="icon" aria-hidden="true"><use href="#icon-cup" /></svg></span><span class="activity-copy"><strong>Jantar sem olhar o relógio</strong><small>Comida boa e assunto de sobra.</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+            <button type="button" class="activity-card" data-choice="activity" data-value="passeio" aria-pressed="false"><span class="activity-icon"><svg class="icon" aria-hidden="true"><use href="#icon-leaf" /></svg></span><span class="activity-copy"><strong>Um passeio sem roteiro</strong><small>Virar a esquina e ver no que dá.</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+            <button type="button" class="activity-card" data-choice="activity" data-value="filme" aria-pressed="false"><span class="activity-icon"><svg class="icon" aria-hidden="true"><use href="#icon-film" /></svg></span><span class="activity-copy"><strong>Filme, cobertor e conversa</strong><small>Uma noite tranquila, bem juntinhos.</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+          </div></fieldset>
+          <fieldset class="plan-group"><legend><span>02</span> E qual é o combinado?</legend><p class="field-help">A única regra é a gente aproveitar.</p><div class="activity-options">
+            <button type="button" class="activity-card" data-choice="vibe" data-value="calma" aria-pressed="false"><span class="vibe-index">a.</span><span class="activity-copy"><strong>Sem pressa de ir embora</strong><small>O melhor plano é curtir a companhia.</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+            <button type="button" class="activity-card" data-choice="vibe" data-value="aventura" aria-pressed="false"><span class="vibe-index">b.</span><span class="activity-copy"><strong>Risadas e pequenas aventuras</strong><small>Se render história, já valeu.</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+            <button type="button" class="activity-card" data-choice="vibe" data-value="surpresa" aria-pressed="false"><span class="vibe-index">c.</span><span class="activity-copy"><strong>Deixar a vida surpreender</strong><small>Espaço para o que a gente não planejou.</small></span><span class="selection-dot" aria-hidden="true"></span></button>
+          </div></fieldset>
+        </div>
+        <p class="plan-footnote"><svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg> Isso é só o começo do plano. O resto a gente inventa juntos.</p>
+        <div class="screen-actions"><button class="text-button" type="button" data-back><span aria-hidden="true">←</span> Voltar aos destinos</button><div class="continue-action"><p class="selection-hint" id="selectionHintPlan" role="status">Escolha um programa e um combinado para continuar.</p><button class="btn btn-primary" type="button" data-next data-requires="activity,vibe" aria-describedby="selectionHintPlan" disabled>Ver a nossa passagem <svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></button></div></div>
+      </section>
+      <section class="screen final-screen" data-screen="4" aria-labelledby="final-title" hidden>
+        <div class="final-copy">
+          <p class="eyebrow">05 / NOSSA PASSAGEM</p>
+          <span class="final-doodle" aria-hidden="true"><svg class="icon"><use href="#icon-heart" /></svg><svg class="icon"><use href="#icon-spark" /></svg></span>
+          <h2 id="final-title"><span data-recipient>Jennifer</span>,<br />a próxima parada<br />é <em>com você?</em></h2>
+          <p id="finalMessage">O destino já está escolhido. Falta a gente combinar a data e transformar esse convite numa lembrança boa.</p>
+          <p class="handwritten" id="finalNote">A gente leva pouca bagagem e volta com muita história.</p>
+          <div class="final-actions"><a id="acceptLink" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp" /></svg> Topo! Vamos combinar</a><a id="planLink" class="text-button" href="#" target="_blank" rel="noopener noreferrer">Quero conversar sobre os detalhes <span aria-hidden="true">↗</span></a></div>
+          <p class="whatsapp-note" id="whatsappTip">Sua resposta e suas escolhas vão com a mensagem.</p>
+        </div>
+        <div class="ticket-side">
+          <article class="ticket" aria-label="Sua passagem personalizada para o fim de semana">
+            <div class="ticket-header"><span class="ticket-wordmark">entre nós.</span><span>PASSAGEM PARA DOIS <svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg></span></div>
+            <div class="ticket-photo">
+              <img id="ticketImage" loading="lazy" src="assets/photos/ouro-preto.jpg" srcset="assets/photos/ouro-preto-480.jpg 480w, assets/photos/ouro-preto-800.jpg 800w, assets/photos/ouro-preto.jpg 1600w" sizes="(max-width: 960px) calc(100vw - 64px), 560px" decoding="async" data-fallback="assets/ouro-preto.svg" alt="Fotografia do destino escolhido" width="1600" height="1067" />
+              <span class="ticket-photo-caption">EMBARQUE NUMA HISTÓRIA BOA</span>
+              <span class="ticket-story-stamp"><span>DO FUSCAS LANCHES</span><strong>para o mundo.</strong><svg class="icon" aria-hidden="true"><use href="#icon-spark" /></svg></span>
+            </div>
+            <div class="ticket-body">
+              <div class="ticket-route" aria-label="Da nossa origem à próxima lembrança">
+                <div class="ticket-origin"><span class="route-dot" aria-hidden="true"></span><div><p class="ticket-label">ONDE COMEÇOU</p><p id="ticketOrigin">São João del-Rei</p></div></div>
+                <div class="ticket-arrival"><svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg><div><p class="ticket-label">PRÓXIMA LEMBRANÇA</p><h3 id="ticketDestination">Ouro Preto</h3></div></div>
+              </div>
+              <dl class="ticket-fields"><div class="ticket-people"><dt>BOAS COMPANHIAS</dt><dd id="ticketPeople">Jennifer + Vinícius</dd></div><div><dt>O PROGRAMA</dt><dd id="ticketActivity">A escolher</dd></div><div><dt>O COMBINADO</dt><dd id="ticketVibe">A escolher</dd></div></dl>
+            </div>
+            <div class="ticket-tear" aria-hidden="true"></div>
+            <div class="ticket-footer"><div><span>DATA DE PARTIDA</span><strong>A gente escolhe juntos</strong></div><svg class="ticket-barcode" viewBox="0 0 100 30" aria-hidden="true"><path d="M1 0v30m4-30v30m3-30v30m5-30v30m7-30v30m3-30v30m4-30v30m5-30v30m3-30v30m6-30v30m3-30v30m7-30v30m3-30v30m5-30v30m7-30v30m3-30v30m3-30v30m6-30v30m3-30v30m5-30v30m7-30v30m3-30v30" /></svg></div>
+          </article>
+          <button id="downloadTicket" class="btn btn-save-ticket" type="button" aria-describedby="downloadStatus"><svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg><span id="downloadTicketLabel">Guardar nossa passagem</span><span class="download-format">PNG</span></button>
+          <p id="downloadStatus" class="download-status" role="status" aria-live="polite"></p>
+          <div class="ticket-tools"><button id="editChoices" type="button" class="text-button">← Ajustar minhas escolhas</button><button id="copyReply" type="button" class="text-button"><svg class="icon" aria-hidden="true"><use href="#icon-copy" /></svg> Copiar resposta</button></div>
+          <label class="screen-reader-only" for="replyText">Mensagem para copiar e enviar</label><textarea id="replyText" class="reply-text" rows="8" readonly hidden></textarea><p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+        </div>
+        <div class="final-bottom"><span>feito com carinho, por <span data-sender>Vinícius</span></span><button id="restartButton" type="button" class="text-button">Recomeçar o convite <span aria-hidden="true">↻</span></button></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Uma pequena viagem começa com um convite.</span><details class="photo-credits"><summary>Fotografias & créditos <span aria-hidden="true">↗</span></summary><div id="photoCredits"><p>Ouro Preto: <a href="https://commons.wikimedia.org/wiki/File:Ouro_Preto,_Minas_Gerais.jpg" target="_blank" rel="noopener noreferrer">Sandra Martins</a>.</p><p>São Thomé das Letras: <a href="https://commons.wikimedia.org/wiki/File:S%C3%A3o_Thom%C3%A9_das_Letras_uma_terra_m%C3%ADstica_Parte_2.jpg" target="_blank" rel="noopener noreferrer">Moacir Guerino</a>.</p><p>São João del-Rei: <a href="https://commons.wikimedia.org/wiki/File:Centro_hist%C3%B3rico_e_vista_parcial_da_Igreja_de_Nossa_Senhora_do_Carmo_em_S%C3%A3o_Jo%C3%A3o_del-Rei_(MG).jpg" target="_blank" rel="noopener noreferrer">Nádia Muniz</a>.</p><p>Fotos via Wikimedia Commons, sob <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Ouro Preto e São Thomé foram redimensionadas e comprimidas; todas são recortadas e têm a saturação ajustada na apresentação. Detalhes gráficos em SVG.</p></div></details><span class="footer-love">MINAS, NÓS & UM POUCO DE CORAGEM <svg class="icon" aria-hidden="true"><use href="#icon-heart" /></svg></span></footer>
+    <noscript><p class="noscript-note">Ative o JavaScript para abrir a carta, escolher o destino e montar seu convite.</p></noscript>
+  </div>
+  <dialog id="ticketSaveDialog" class="ticket-save-dialog" aria-labelledby="ticketSaveTitle" aria-describedby="ticketSaveInstructions" aria-modal="true">
+    <div class="ticket-save-heading"><div><p class="eyebrow">UMA LEMBRANÇA PRA GUARDAR</p><h2 id="ticketSaveTitle">Nossa passagem <em>vai com você.</em></h2></div><button id="closeTicketSave" class="ticket-save-close" type="button" aria-label="Fechar a prévia da passagem">×</button></div>
+    <p id="ticketSaveInstructions" class="ticket-save-instructions">Para guardar, toque e segure a imagem ou use “Baixar imagem”.</p>
+    <div class="ticket-save-preview-wrap"><img id="ticketSavePreview" class="ticket-save-preview" alt="Sua passagem personalizada, com destino, programa e combinado" /></div>
+    <div class="ticket-save-actions"><a id="saveTicketFile" class="btn btn-primary" download target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-download" /></svg> Baixar imagem</a><button id="shareTicket" class="btn btn-save-ticket" type="button" hidden><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg> Compartilhar passagem</button></div>
+    <p id="ticketSaveStatus" class="ticket-save-status" role="status" aria-live="polite"></p>
+  </dialog>
+  <div class="screen-reader-only" id="liveAnnouncement" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 880" role="img" aria-labelledby="title"><title id="title">São Thomé das Letras — pedras e mirantes ao pôr do sol</title><defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4c3a62"/><stop offset=".58" stop-color="#ce8396"/><stop offset="1" stop-color="#f5c29b"/></linearGradient>
+ <linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff7df" stop-opacity=".32"/><stop offset="1" stop-color="#33273e" stop-opacity=".1"/></linearGradient>
+ <radialGradient id="sun"><stop stop-color="#fff1cf" stop-opacity=".85"/><stop offset="1" stop-color="#fff1cf" stop-opacity="0"/></radialGradient>
+ </defs><rect width="800" height="880" fill="url(#sky)"/><circle cx="572" cy="332" r="220" fill="url(#sun)"/><circle cx="570" cy="347" r="78" fill="#f7d6b0" opacity=".8"/>
+<path d="M0 487Q176 407 350 464Q537 366 800 461V880H0Z" fill="#83788a" opacity=".65"/>
+<path d="M0 551Q230 435 404 519Q596 425 800 512V880H0Z" fill="#686679"/>
+<path d="M0 652Q184 511 365 599Q563 534 800 615V880H0Z" fill="#756b73"/>
+<!-- Igreja de Pedra: traços estilizados -->
+<path d="M78 548h255v176H78Z" fill="#e4c9aa" stroke="#a58a88" stroke-width="5"/><path d="M56 551L205 465L356 551Z" fill="#8b6e76"/>
+<rect x="111" y="481" width="57" height="147" fill="#ead6b6" stroke="#a68a86" stroke-width="4"/><path d="M106 484l34-42 33 42Z" fill="#826a79"/>
+<rect x="243" y="481" width="57" height="147" fill="#ead6b6" stroke="#a68a86" stroke-width="4"/><path d="M237 484l35-42 35 42Z" fill="#826a79"/>
+<rect x="125" y="506" width="29" height="51" rx="14" fill="#61566b"/><rect x="257" y="506" width="29" height="51" rx="14" fill="#61566b"/>
+<path d="M140 437v16M273 437v16" stroke="#f8dcb3" stroke-width="5"/><path d="M132 443h16M265 443h16" stroke="#f8dcb3" stroke-width="4"/>
+<path d="M181 724v-84q0-32 25-32t25 32v84" fill="#665568" stroke="#ecd6b7" stroke-width="6"/>
+<path d="M0 740L170 672L355 727L515 672L800 724V880H0Z" fill="#685768"/>
+<!-- mirante de pedra com pirâmide de quartzo -->
+<path d="M410 722L535 635L645 685L779 636L800 880H387Z" fill="#a4918c"/>
+<path d="M415 724L495 654L587 713L650 669L742 720L781 638" fill="none" stroke="#c8afa3" stroke-width="13"/>
+<path d="M565 640L615 577L664 640Z" fill="#cbb9a4" stroke="#827583" stroke-width="5"/><path d="M575 640L613 609L652 640Z" fill="#8b7d85"/>
+<path d="M494 779L571 722L664 752L722 705L800 743V880H422Z" fill="#897c82"/>
+<path d="M0 840L138 793L283 835L440 773L590 815L700 786L800 816V880H0Z" fill="#62535f"/>
+<path d="M0 850L130 828 256 855 437 815 560 835 692 808 800 834" fill="none" stroke="#bca396" stroke-width="9" opacity=".5"/>
+<path d="M730 730q24-37 48 0" fill="none" stroke="#dec2a4" stroke-width="5" opacity=".6"/>
+</svg>

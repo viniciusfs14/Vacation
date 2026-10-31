@@ -1,0 +1,47 @@
+[
+    {
+        "city":  "Ouro Preto",
+        "path":  "assets/photos/ouro-preto.jpg",
+        "title":  "Ouro Preto, Minas Gerais.jpg",
+        "author":  "Sandra Martins",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl":  "https://commons.wikimedia.org/wiki/File:Ouro_Preto,_Minas_Gerais.jpg",
+        "originalUrl":  "https://upload.wikimedia.org/wikipedia/commons/7/71/Ouro_Preto%2C_Minas_Gerais.jpg",
+        "width":  1600,
+        "height":  1067,
+        "bytes":  342079,
+        "changes":  "Redimensionada proporcionalmente e comprimida em JPEG para uso na web; sem retoque de conteúdo.",
+        "alt":  "Casario colonial, igrejas e telhados de Ouro Preto sob o céu azul."
+    },
+    {
+        "city":  "São João del-Rei",
+        "path":  "assets/photos/sao-joao.jpg",
+        "title":  "Centro histórico e vista parcial da Igreja de Nossa Senhora do Carmo em São João del-Rei (MG).jpg",
+        "author":  "Nádia Muniz",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl":  "https://commons.wikimedia.org/wiki/File:Centro_hist%C3%B3rico_e_vista_parcial_da_Igreja_de_Nossa_Senhora_do_Carmo_em_S%C3%A3o_Jo%C3%A3o_del-Rei_(MG).jpg",
+        "originalUrl":  "https://upload.wikimedia.org/wikipedia/commons/1/16/Centro_hist%C3%B3rico_e_vista_parcial_da_Igreja_de_Nossa_Senhora_do_Carmo_em_S%C3%A3o_Jo%C3%A3o_del-Rei_%28MG%29.jpg",
+        "width":  1296,
+        "height":  864,
+        "bytes":  112296,
+        "changes":  "Arquivo original sem alteração.",
+        "alt":  "Casas coloniais coloridas e a Igreja de Nossa Senhora do Carmo em São João del-Rei."
+    },
+    {
+        "city":  "São Thomé das Letras",
+        "path":  "assets/photos/sao-thome.jpg",
+        "title":  "São Thomé das Letras uma terra mística Parte 2.jpg",
+        "author":  "Moacir Guerino",
+        "license":  "CC BY-SA 4.0",
+        "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl":  "https://commons.wikimedia.org/wiki/File:S%C3%A3o_Thom%C3%A9_das_Letras_uma_terra_m%C3%ADstica_Parte_2.jpg",
+        "originalUrl":  "https://upload.wikimedia.org/wikipedia/commons/7/70/S%C3%A3o_Thom%C3%A9_das_Letras_uma_terra_m%C3%ADstica_Parte_2.jpg",
+        "width":  1600,
+        "height":  1200,
+        "bytes":  105049,
+        "changes":  "Redimensionada proporcionalmente e comprimida em JPEG para uso na web; sem retoque de conteúdo.",
+        "alt":  "Pôr do sol dourado com a silhueta da Pirâmide em São Thomé das Letras."
+    }
+]
