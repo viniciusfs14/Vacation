@@ -12,7 +12,12 @@
         "height":  1067,
         "bytes":  342079,
         "changes":  "Redimensionada proporcionalmente e comprimida em JPEG para uso na web; sem retoque de conteúdo.",
-        "alt":  "Casario colonial, igrejas e telhados de Ouro Preto sob o céu azul."
+        "alt":  "Casario colonial, igrejas e telhados de Ouro Preto sob o céu azul.",
+        "responsiveVariants":  [
+                                   "assets/photos/ouro-preto-480.jpg",
+                                   "assets/photos/ouro-preto-800.jpg"
+                               ],
+        "responsiveChanges":  "Versões responsivas redimensionadas proporcionalmente e comprimidas em JPEG, qualidade 82."
     },
     {
         "city":  "São João del-Rei",
@@ -27,7 +32,12 @@
         "height":  864,
         "bytes":  112296,
         "changes":  "Arquivo original sem alteração.",
-        "alt":  "Casas coloniais coloridas e a Igreja de Nossa Senhora do Carmo em São João del-Rei."
+        "alt":  "Casas coloniais coloridas e a Igreja de Nossa Senhora do Carmo em São João del-Rei.",
+        "responsiveVariants":  [
+                                   "assets/photos/sao-joao-480.jpg",
+                                   "assets/photos/sao-joao-800.jpg"
+                               ],
+        "responsiveChanges":  "Versões responsivas redimensionadas proporcionalmente e comprimidas em JPEG, qualidade 82."
     },
     {
         "city":  "São Thomé das Letras",
@@ -42,6 +52,11 @@
         "height":  1200,
         "bytes":  105049,
         "changes":  "Redimensionada proporcionalmente e comprimida em JPEG para uso na web; sem retoque de conteúdo.",
-        "alt":  "Pôr do sol dourado com a silhueta da Pirâmide em São Thomé das Letras."
+        "alt":  "Pôr do sol dourado com a silhueta da Pirâmide em São Thomé das Letras.",
+        "responsiveVariants":  [
+                                   "assets/photos/sao-thome-480.jpg",
+                                   "assets/photos/sao-thome-800.jpg"
+                               ],
+        "responsiveChanges":  "Versões responsivas redimensionadas proporcionalmente e comprimidas em JPEG, qualidade 82."
     }
 ]

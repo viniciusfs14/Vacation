@@ -3,7 +3,7 @@
  * Sem número válido, a resposta abre o seletor de contatos do WhatsApp.
  */
 const CONFIG = {
-  recipientName: 'Jennifer',
+  recipientName: 'Jenifer',
   senderName: 'Vinícius',
   whatsappNumber: '5531982491262',
   personalNote: 'Foi em São João del-Rei que a gente se conheceu. Depois veio o rolê com a turma, as bebidas e o Fuscas Lanches. Agora olha onde eu vim parar: escolhendo cidades de Minas e fazendo um site inteiro pra te chamar pra viajar. Acho que me empolguei um pouquinho. kkkkk'
@@ -583,14 +583,26 @@ const CONFIG = {
   });
   byId('ticketSaveDialog')?.addEventListener('keydown', keepFallbackDialogFocus);
 
-  // Cada foto tem uma ilustração local de reserva, inclusive offline.
+  // Uma variante ausente tenta primeiro a foto original; o SVG é a última reserva.
   document.querySelectorAll('img[data-fallback]').forEach(image => {
     const useFallback = () => {
       const fallback = image.dataset.fallback;
-      if (!fallback) return;
-      image.removeAttribute('srcset');
-      image.removeAttribute('sizes');
-      if (fallback && image.getAttribute('src') !== fallback) image.src = fallback;
+      if (!fallback || !image.complete || image.naturalWidth > 0) return;
+      const original = image.getAttribute('src');
+      const candidates = [original, ...(image.getAttribute('srcset') || '')
+        .split(',').map(candidate => candidate.trim().split(/\s+/)[0])].filter(Boolean);
+      if (image.currentSrc && !candidates.some(candidate => {
+        try { return new URL(candidate, document.baseURI).href === image.currentSrc; }
+        catch { return image.currentSrc === candidate || image.currentSrc.endsWith(`/${candidate}`); }
+      })) return;
+
+      if (image.hasAttribute('srcset')) {
+        image.removeAttribute('srcset');
+        image.removeAttribute('sizes');
+        if (original) image.src = original;
+        return;
+      }
+      if (original !== fallback) image.src = fallback;
     };
     image.addEventListener('error', useFallback);
     if (image.complete && image.naturalWidth === 0) useFallback();
